@@ -11,17 +11,17 @@ class Footer extends Component {
 		
 		return (
 			<div className="footMain">
-				<div>
+				<div  className="footDiv">
 					<i className="iconfont icon-shouye"></i>
-					<p>首页</p>
+					<span>首页</span>
 				</div>
-				<div>
+				<div className="footDiv">
 					<i className="iconfont icon-fenlei1"></i>
-					<p>分类</p>
+					<span>分类</span>
 				</div>
-				<div>
+				<div className="footDiv">
 					<i className="iconfont icon-geren"></i>
-					<p>个人</p>
+					<span>个人</span>
 				</div>
 			</div>
 		);

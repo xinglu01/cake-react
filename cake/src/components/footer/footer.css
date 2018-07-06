@@ -5,19 +5,20 @@
 	justify-content: space-around;
 }
 
-.footMain>div{
+.footMain>.footDiv{
 	width: 12.5rem;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 	justify-content: center;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	text-align: center;
 }
 
 .icon-shouye,.icon-fenlei1,.icon-geren{
-	margin-left: 0 !important;
 	width: 100%;
-	font-size: 2.2rem;
+	margin-bottom: 0.4rem;
+	font-size: 2.6rem;
+	font-weight: bold;
 	height: 2.5rem;
 }

@@ -9,18 +9,18 @@ class Header extends Component {
 		
 		return (
 			<div className="headMain">
-				<ul>
+				<ul className="headUl">
 					<li className="fristLi">
-						<i className="iconfont icon-fenlei" ></i>
-						<i className="iconfont icon-dingwei"></i>
-						<span>上海</span>
+						<i className="iconfont icon icon-fenlei" ></i>
+						<i className="iconfont icon icon-dingwei"></i>
+						<span className="pos">上海</span>
 					</li>
 					<li className="centerLi">
 						<img src="http://static.21cake.com/themes/wap/img/logo.png" alt="" />
 					</li>
 					<li className="lastLi">
-						<i className="iconfont icon-liaotian"></i>
-						<i className="iconfont icon-gouwuche1"></i>
+						<i className="iconfont icon icon-liaotian"></i>
+						<i className="iconfont icon icon-gouwuche1"></i>
 					</li>
 				</ul>
 				
