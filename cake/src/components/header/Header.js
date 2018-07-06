@@ -16,7 +16,7 @@ class Header extends Component {
 						<span className="pos">上海</span>
 					</li>
 					<li className="centerLi">
-						<img src="http://static.21cake.com/themes/wap/img/logo.png" alt="" />
+						<img src={require("../../asstic/imgs/logo.png")} alt="" />
 					</li>
 					<li className="lastLi">
 						<i className="iconfont icon icon-liaotian"></i>

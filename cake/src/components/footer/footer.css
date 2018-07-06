@@ -1,18 +1,21 @@
 .footMain{
 	height: 5rem;
-	background: #fcc;
 	display: flex;
 	justify-content: space-around;
 }
 
-.footMain>.footDiv{
+.footDiv{
 	width: 12.5rem;
+}
+
+.footLink{
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 	justify-content: center;
 	font-size: 1.4rem;
 	text-align: center;
+	color: #442818;
 }
 
 .icon-shouye,.icon-fenlei1,.icon-geren{
@@ -21,4 +24,8 @@
 	font-size: 2.6rem;
 	font-weight: bold;
 	height: 2.5rem;
+}
+
+.footDiv>span{
+	display: inline-block;
 }
