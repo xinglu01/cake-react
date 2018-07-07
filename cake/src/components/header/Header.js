@@ -11,9 +11,7 @@ class Header extends Component {
 			<div className="headMain">
 				<ul className="headUl">
 					<li className="fristLi">
-						<i className="iconfont icon icon-fenlei" ></i>
-						<i className="iconfont icon icon-dingwei"></i>
-						<span className="pos">上海</span>
+						<i className="iconfont icon icon-jiantou3"></i>
 					</li>
 					<li className="centerLi">
 						<img src={require("../../asstic/imgs/logo.png")} alt="" />

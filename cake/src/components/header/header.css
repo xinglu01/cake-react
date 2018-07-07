@@ -17,11 +17,13 @@
 }
 
 .fristLi,.lastLi{
-	width: 10rem;
+	width: 5rem;
 	display: flex;
 	justify-content: center;
 }
-
+.lastLi{
+	width: 8rem;
+}
 
 .centerLi{
 	flex: 1;
@@ -29,8 +31,7 @@
 }
 
 .centerLi>img{
-	width: 3rem;
-	height: 2.4rem;
+	width: 100%;
 }
 
 .icon{
@@ -45,4 +46,8 @@
 .pos{
 	height: 100%;
 	line-height: 4.8rem;
+}
+
+.icon-jiantou{
+	font-weight: 100;
 }
