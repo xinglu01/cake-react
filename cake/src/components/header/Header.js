@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import './header.css';
 
 class Header extends Component {
+	constructor(props){
+		super(props)
+		
+		this.handelgoCart = this.handelgoCart.bind(this)
+	}
+	
+	handelgoCart(){
+		console.log(this.props)
+	}
 	
 	render() {
 		return (
@@ -15,7 +24,7 @@ class Header extends Component {
 					</li>
 					<li className="lastLi">
 						<i className="iconfont icon icon-liaotian"></i>
-						<i className="iconfont icon icon-gouwuche1"></i>
+						<i className="iconfont icon icon-gouwuche1" onClick={this.handelgoCart}></i>
 					</li>
 				</ul>
 			</div>

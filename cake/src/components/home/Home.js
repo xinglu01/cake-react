@@ -16,19 +16,18 @@ class Home extends Component {
 			list : [],
 			hotList : []
 		}
-		
 	}
 	
 	componentDidMount() {
     setTimeout(() => {
       this.setState({
-        data: ['17_yga_m','new_banner_xingzuo_jxz','18_youflower_m','18_temai_m'],
+        data: ['M02/2F/07/CgvUA1s-A1-AQijMAAD1Ff1tni4925_15_8_o','M04/4C/34/CgvUBFtDEPGAS1R4AADhDIZ5O3A120_15_8_o','M0A/4E/37/CgvUBFtDVYOANA71AADScI-uqMQ874_15_8_o','M04/44/79/CgvUA1tCNwWAL-RaAAEVHtBYLTU556_15_8_o'],
       });
-    }, 1000)
+    }, 500)
     
     FetchJsonp(HOME_LIST_URL,{
       jsonpCallback: 'callback',
-      timeout: 10000 })
+      timeout: 8000 })
 	    .then((res) => {return res.json()})
 	    .then((data) => {
 	      this.setState({
@@ -54,7 +53,7 @@ class Home extends Component {
     	this.state.list.map((item,index)=>{
     		return(
       		<li className="homeList" key={item.goodsID}>
-			    	<Link to="/detail/" className="homeA">
+			    	<Link to={"/detail/"+ item.goodsID} className="homeA">
 			    		<img src = { item.goodsListImg } alt="" />
 			    	</Link>
 			    	<div className="listInfo">    
@@ -80,8 +79,6 @@ class Home extends Component {
   						<div className="hotDiv">
     						<span>{item.title}</span>
   						</div>
-    						<span>{item.time_left}</span>
-    						<span>{item.vprice}/元</span>
           	</Link>
           </li>
     		)
@@ -98,7 +95,7 @@ class Home extends Component {
 	              href="javascript:;"
 	              style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}>
 	              <img
-	                src={`http://img02.hua.com/slider/${val}.jpg`}
+	                src={`http://pic1.ymatou.com/G02/${val}.jpg`}
 	                alt=""
 	                style={{ width: '100%', verticalAlign: 'top' }}
 	                onLoad={() => {

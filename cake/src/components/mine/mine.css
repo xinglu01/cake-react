@@ -1,0 +1,21 @@
+.mine_top{
+	height: 10rem;
+	width: 100%;
+	background: #df3c61;
+	display: flex;
+	align-items: center;
+}
+
+.mine_top>img{
+	width: 5.5rem;
+	height: 5.5rem;
+	margin-left: 3.5rem;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+.mine_top>b{
+	font-size: 1.6rem;
+	color: #fff;
+	margin-left: 1rem;
+}

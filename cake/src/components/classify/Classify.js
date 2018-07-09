@@ -41,9 +41,9 @@ class Classify extends Component {
 	
 	render() {
 		var menuItem2 = [];
-		if( this.state.kindList!=0) {
+		if( this.state.kindList!==0) {
 			this.state.kindList.map((item,index)=>{
-    		menuItem2.push(
+    		return( menuItem2.push(
       		<li className="homeList" key={item.goodsID}>
 			    	<Link to={"/detail/"+ item.goodsID} className="homeA">
 			    		<img src = { item.goodsListImg } alt="" />
@@ -59,7 +59,7 @@ class Classify extends Component {
 				    	</span>    
 			    	</div>    
 			    </li>
-    		)
+    		) )
     	})
 		}else{
 			menuItem2 = '暂时没有数据'
@@ -67,7 +67,7 @@ class Classify extends Component {
 		
 		return (
 			<div className="container">
-        <Header />
+        <Header/>
         <div className="mainCenter">
         	<div className="ul-box">
 	        	<ul className="classifyUl">

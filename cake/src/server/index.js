@@ -4,3 +4,5 @@ export const HOME_HOT_GOODS = 'https://webservice.juanpi.com/api/getGoods?page=1
 
 export const CLASSIFY_LIST_URL = 'http://datainfo.duapp.com/shopdata/getclass.php'
 export const CLASSIFY_KIND_URL = 'http://datainfo.duapp.com/shopdata/getGoods.php'
+
+export const DETAIL_DATA_URL = ' http://datainfo.duapp.com/shopdata/getGoods.php'

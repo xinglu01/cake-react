@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './reset.css';
 import 'antd/dist/antd.css';
+import './reset.css';
 import ErrorBoundary from './ErrorBoundary.js';
 import Detail from './components/detail/Detail.js';
 import Register from './components/register/Register.js';

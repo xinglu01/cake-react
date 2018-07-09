@@ -2,6 +2,7 @@
 	height: 5rem;
 	display: flex;
 	justify-content: space-around;
+	background: #fff;
 }
 
 .footDiv{
@@ -16,6 +17,7 @@
 	font-size: 1.4rem;
 	text-align: center;
 	color: #442818;
+	height: 100%;
 }
 
 .icon-shouye,.icon-fenlei1,.icon-geren{

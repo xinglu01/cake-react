@@ -8,6 +8,7 @@
   height: 18rem;
   display: flex;
   width: 900%;
+  overflow-y: hidden;
 }
 
 .topList>li{
@@ -29,6 +30,7 @@
 
 .hotDiv{
 	display: flex;
+	height: 4rem;
 }
 
 .hotDiv>span:first-child{
@@ -36,10 +38,14 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
+  height: 100%;
+  color: #666;
+  line-height: 4rem;
+  font-size: 1.5rem;
 }
 
 .homeUl{
-	width: 89%;
+	width: 85%;
 	height: auto;
 	overflow: hidden;
 	margin: 0 auto;

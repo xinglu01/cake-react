@@ -7,8 +7,8 @@
 	width: 200%;
 	height: 3rem;
 	justify-content: space-around;
-	border-bottom: 0.1rem solid #BCBCBC;
-	margin-bottom:0 !important;
+	margin-bottom:1rem !important;
+	margin-top: 1rem;
 }
 
 .classifyUl>li{
