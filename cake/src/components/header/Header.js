@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import './header.css';
 
-
-
 class Header extends Component {
 	
 	render() {
-		
 		return (
 			<div className="headMain">
 				<ul className="headUl">
@@ -21,12 +18,9 @@ class Header extends Component {
 						<i className="iconfont icon icon-gouwuche1"></i>
 					</li>
 				</ul>
-				
 			</div>
 		);
-		
 	}
-	
 	
 }
 

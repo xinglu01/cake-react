@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="App">
       	<Switch>
-      		<Route path="/classify" component={Classify} />
+      		<Route path="/classify/:classID" component={Classify} />
       		<Route path="/mine" component={Mine} />
       		<Route path="/" component={Home} />
       	</Switch>

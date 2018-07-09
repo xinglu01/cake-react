@@ -1,15 +1,41 @@
-.rights-box{
-  text-align: center;
-  height: 14rem;
-  background: #fcf;
-  display: flex;
-  justify-content: space-around;
-  overflow: hidden;
+.top-box{
+	overflow-x: auto;
+	margin: 1rem 0;	
 }
 
-.rights-box>li{
-	overflow-x: auto;
-	width: 1000%;
+.topList{
+  text-align: center;
+  height: 18rem;
+  display: flex;
+  width: 900%;
+}
+
+.topList>li{
+	height: 100%;
+	width: 14rem !important;
+	margin-left: 1rem;
+	margin-top: 1rem;
+	border: 2px solid #f4ebe2;
+}
+
+.hotLink{
+	height: 100%;
+	width: 100%;
+}
+
+.hotLink>img{
+	width: 100%;
+}
+
+.hotDiv{
+	display: flex;
+}
+
+.hotDiv>span:first-child{
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .homeUl{

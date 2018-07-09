@@ -4,7 +4,8 @@ import { View as Header } from '../header/';
 import { Carousel } from 'antd-mobile';
 import FetchJsonp from 'fetch-jsonp';
 import { Link } from 'react-router-dom';
-import { HOME_LIST_URL , HOME_HOT_GOODS } from '../../server/'
+import { HOME_LIST_URL , HOME_HOT_GOODS } from '../../server/';
+import axios from 'axios';
 
 class Home extends Component {
 	constructor(props){
@@ -15,14 +16,13 @@ class Home extends Component {
 			list : [],
 			hotList : []
 		}
+		
 	}
-	
-	
 	
 	componentDidMount() {
     setTimeout(() => {
       this.setState({
-        data: ['G02/M0A/3A/B6/CgvUBVs_BJiALTTkAADPaZIt31Q879_15_8_o','G02/M0B/15/CB/CgvUA1s58ECARlIrAAD4-6_xwZQ110_15_8_w_o','G02/M02/2E/B5/CgvUA1s99_eAWW_PAAC0gXp5GLQ771_15_8_o','G02/M04/34/40/CgvUA1s-_U-AQ7aZAADnc2_K9fg079_15_8_o', 'G02/M06/3D/59/CgvUBFs_oPaAWnhPAACxV5-wAGc622_15_8_o'],
+        data: ['17_yga_m','new_banner_xingzuo_jxz','18_youflower_m','18_temai_m'],
       });
     }, 1000)
     
@@ -37,7 +37,16 @@ class Home extends Component {
 	    })
 	    .catch((err) => {console.log(err)})
 	    
-	  
+    axios.get(HOME_HOT_GOODS)
+    	.then((res)=>{
+          const hotData = res.data.data.goods
+          this.setState({
+          	hotList : hotData
+          })
+      })
+    	.catch((err)=>{
+          console.log(err.status);
+      })
   }
 	
 	render() {
@@ -45,11 +54,11 @@ class Home extends Component {
     	this.state.list.map((item,index)=>{
     		return(
       		<li className="homeList" key={item.goodsID}>
-			    	<Link to={"/detail"+ item.goodsID} className="homeA">
+			    	<Link to="/detail/" className="homeA">
 			    		<img src = { item.goodsListImg } alt="" />
 			    	</Link>
 			    	<div className="listInfo">    
-				    	<Link to={"/detail"+ item.goodsID} className="listInfo_one">    
+				    	<Link to={"/detail/"+ item.goodsID} className="listInfo_one">    
 						    <div className="title">{item.goodsName}</div> 
 						    <div className="price">{item.price}元</div>
 					    	<div className="titleAll">{item.discount}</div>
@@ -61,6 +70,23 @@ class Home extends Component {
 			    </li>
     		)
     	})
+    	
+  	const menuItem2 =
+    	this.state.hotList.map((item,index)=>{
+    		return(
+      		<li key={item.goods_id}>
+          	<Link to={"classify/"+item.is_jump} className="hotLink">
+          		<img src={item.pic_url} alt="" />
+  						<div className="hotDiv">
+    						<span>{item.title}</span>
+  						</div>
+    						<span>{item.time_left}</span>
+    						<span>{item.vprice}/元</span>
+          	</Link>
+          </li>
+    		)
+    	})
+    	
 		return (
 			<div className="container">
         <Header />
@@ -72,7 +98,7 @@ class Home extends Component {
 	              href="javascript:;"
 	              style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}>
 	              <img
-	                src={`http://pic1.ymatou.com/${val}.jpg`}
+	                src={`http://img02.hua.com/slider/${val}.jpg`}
 	                alt=""
 	                style={{ width: '100%', verticalAlign: 'top' }}
 	                onLoad={() => {
@@ -83,9 +109,11 @@ class Home extends Component {
 	          	</a>
 	        	))}
         	</Carousel>
-        	<ul className="rights-box">
-            <li>123</li>
-          </ul>
+        	<div className="top-box">
+	        	<ul className="topList">
+	            {menuItem2}
+	          </ul>
+          </div>
           <ul className="homeUl" >
 						{menuItem}
 					</ul>

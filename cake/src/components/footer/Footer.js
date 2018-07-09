@@ -17,7 +17,7 @@ class Footer extends Component {
 				</div>
 				
 				<div className="footDiv">
-					<Link to="/classify" className="footLink">
+					<Link to="/classify/1" className="footLink">
 						<i className="iconfont icon-fenlei1"></i>
 						<span>分类</span>
 					</Link>	

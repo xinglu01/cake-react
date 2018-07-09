@@ -12,23 +12,15 @@ class Detail extends Component {
     	imgHeight: 176,
 			data: []
 		}
-		
 	}
 	
 	componentDidMount() {
-		const newData = this.props.match.params.id
-		const message1 = newData.split("-")
-		const message2 = message1[1].split(".")
-		const goodsId = message2[0]
 		setTimeout(() => {
       this.setState({
         data: ['d35171b84c2cc8a695d71545387588bf','a328cb09dc6e7b230ded8e5bd9116f6a','f5c184a98afac9e350304232c69b2bc5'],
       });
     }, 2000);
-    
 	}
-	
-	
 	
 	render() {
 		return (
@@ -55,7 +47,6 @@ class Detail extends Component {
 		            </a>
 		          ))}
 		        </Carousel>
-		       	
 	        </div>
       	</div>
       	<footer><button className="add_cart">加入购物车</button></footer>
