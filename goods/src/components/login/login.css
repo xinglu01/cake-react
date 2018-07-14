@@ -1,0 +1,56 @@
+.input_box{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+
+.login_input{
+	width: 70%;
+	height: 4rem;
+	margin-top: 2rem;
+	padding-left: 0.7rem;
+	font-size: 1.4rem;
+	border-radius: .5rem
+}
+
+.login_btn{
+	width: 70%;
+	height: 4rem;
+	background: #c03433;
+	color: #fff;
+	margin-top: 5rem;
+	font-size: 2.2rem;
+	text-align: center;
+	line-height: 4rem;
+	border-radius: .5rem
+}
+
+.register_btn{
+	width: 70%;
+	height: 4rem;
+	background: #c03433;
+	color: #fff;
+	margin-top: 2rem;
+	font-size: 2.2rem;
+	text-align: center;
+	line-height: 4rem;
+	border-radius: .5rem
+}
+
+header{
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+
+header>div{
+	font-size: 1.4rem;
+	line-height:4rem;
+}
+
+.topName{
+	font-size: 1.8rem;
+	color: #c03433;
+}

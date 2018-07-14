@@ -1,0 +1,58 @@
+.headMain{
+	background-color:#fff;
+	font-size: 1.6rem;
+	height: 4rem;
+}
+
+.headUl{
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+}
+
+.headUl>li{
+	display: flex;
+	align-items: center;
+}
+
+.fristLi,.lastLi{
+	width: 5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.lastLi{
+	width: 8rem;
+}
+
+.lastLi>a{
+	height: 100%;
+}
+
+.centerLi{
+	flex: 1;
+	justify-content: center;
+}
+
+.centerLi>img{
+	width: 100%;
+}
+
+.icon{
+	height: 100%;
+	font-size: 2.2rem;
+	margin-left: 1rem;
+	color: #442818;
+	font-weight: bold;
+	line-height: 4.8rem;
+}
+
+.pos{
+	height: 100%;
+	line-height: 4.8rem;
+}
+
+.icon-jiantou{
+	font-weight: 100;
+}
